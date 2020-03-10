@@ -47,7 +47,7 @@ class InputData :
                     data_uniformalization=False,\
                     RNN=False)
 
-        self.originDf = pd.read_csv("../test.csv").set_index("datetime")
+        self.originDf = pd.read_csv(inputDataConfiguation.pathOfinputData).set_index("datetime")
 
 
     def _splitXY(self, df, num_input) :

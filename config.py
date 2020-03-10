@@ -26,7 +26,7 @@ class InputDataConfiguration :
             self.labelList = ["Active Power (W)", "Generator Speed (RPM)"]
 
         if DNN == True :
-            self.pathOfinputData = "../input_data.csv"
+            self.pathOfinputData = "./data/input_data.csv"
             self.num_input = 5
             self.num_label = 1
             self.train_ratio = 0.7
