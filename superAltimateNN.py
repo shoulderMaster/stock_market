@@ -612,7 +612,6 @@ class NeuralNetwork :
         for i in range(0, len(testY[0])) :
             df["label_"+str(i)] = [entry[i] for entry in testY]
 
-        df = df.join(self.inputData.originDf["D.DeRatedPower"])
         df.to_csv(self.config.learning.resultPath)
 
     def _modelEvaluation(self, predList, labelList) :
